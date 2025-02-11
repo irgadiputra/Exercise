@@ -14,7 +14,7 @@ console.log(isEqual({a: 1}, {a: 1}));
 function findIntersection(obj1: object, obj2: object): object{
     let objToCheck: object = {};
     Object.keys(obj1).length > Object.keys(obj2).length? 
-        Object.assign(objToCheck, obj1) : Object.assign(objToCheck, obj1);
+        Object.assign(objToCheck, obj1) : Object.assign(objToCheck, obj2);
 
     for (let key in objToCheck) {
         if (obj1[key] !== obj2[key]) {

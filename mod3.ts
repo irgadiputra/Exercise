@@ -42,7 +42,7 @@ console.log(wordLeft);
 let stringToCapitalize:string       = "hello world";
 let stringAfterCapitalize:string    = stringToCapitalize.slice(0,1).toUpperCase();
 for (let i = 1;  i < stringToCapitalize.length; i++){
-    if ((stringToCapitalize.slice(i, i+1) == " " && !(stringToCapitalize.slice(i+1, i+2) == " "))){
+    if ((stringToCapitalize.slice(i, i+1) == " " )){
         stringAfterCapitalize = stringAfterCapitalize + stringToCapitalize.slice(i, i+2).toUpperCase();
         i+=2;
     } 
